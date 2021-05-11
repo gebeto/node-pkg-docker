@@ -1,0 +1,20 @@
+{
+  "name": "node-pkg-docker-alpine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+  	"server": "index.js"
+  },
+  "scripts": {
+  	"build": "pkg ."
+  },
+  "pkg": {
+    "targets": [ "linux", "macos", "alpine" ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pkg": "^5.1.0"
+  }
+}
